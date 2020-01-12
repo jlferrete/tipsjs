@@ -1,5 +1,5 @@
-const button = document.querySelector("button");
+const button = document.querySelectorAll("button");
 
 
-console.log(button);
-button.innerHTML = "Hello";
+console.log(button[0]);
+button[0].innerHTML = "Hello";
