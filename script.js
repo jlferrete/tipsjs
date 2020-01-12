@@ -1,5 +1,9 @@
-const button = document.querySelectorAll("button");
+const button = document.querySelector("button");
+const output = document.querySelector(".output");
 
 
 console.log(button[0]);
-button[0].innerHTML = "Hello";
+button.addEventListener("click", function() {
+    console.log("click");
+    output.innerHTML = "output";
+})
