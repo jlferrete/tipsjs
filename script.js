@@ -2,8 +2,9 @@ const button = document.querySelector("button");
 const output = document.querySelector(".output");
 
 
-console.log(button[0]);
+console.log(button);
 button.addEventListener("click", function() {
-    console.log("click");
-    output.innerHTML = "output";
+    const cost = document.querySelector("input");
+    console.log(cost.value);
+    output.innerHTML = cost.value;
 })
